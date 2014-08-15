@@ -8,7 +8,7 @@ class Ndenv < Formula
   head 'https://github.com/5t111111/ndenv.git'
 
   def install
-    inreplace 'libexec/nbenv', '/usr/local', HOMEBREW_PREFIX
+    inreplace 'libexec/ndenv', '/usr/local', HOMEBREW_PREFIX
     prefix.install Dir['*']
   end
 
